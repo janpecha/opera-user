@@ -1,0 +1,73 @@
+/** Old VCH Theme
+@author	Jan Pecha
+@copyright VCH.cz
+*/
+
+/*
+TODO: prihlasovaci form na HP
+TODO: spacer
+TODO: ikonky - pomoci selektoru atributu
+*/
+
+body {
+	background: #fff7d8 !important;
+}
+
+#wrapheader {
+	background-color: #fceda9 !important;
+	border-color: #f5cf6d !important;
+}
+
+#wrapheader, #wrapheader h1, #wrapheader span.gen {
+	color: #000 !important;
+}
+
+#top_logo a img {
+	background: url("./images/site_logo.gif") no-repeat !important;
+	width: 390px !important;
+	height: 109px !important;
+}
+
+#logodesc {
+	background: url("./images/background.gif") repeat-x left top !important;
+	height: 109px !important;
+}
+
+.tablebg {
+	background-color: #f5cf6d !important;
+	border: 1px solid #fae395 !important;
+}
+
+.row1, .row2, .row3 {
+	background-color: #fceda9 !important;
+	padding-bottom: 4px !important;
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+	padding-top: 4px !important;
+}
+
+.row3 {
+	background-color: #fadc78 !important;
+}
+
+.cat {
+	background-image: url("./images/cellpic1.gif") !important;
+	background-color: #f5ca58 !important;
+	padding-top: 0 !important;
+}
+
+.catdiv {
+	background-image: url("./images/cellpic2.jpg") !important;
+}
+
+.spacer {
+	background-color: #f5cb58 !important;
+}
+
+.spacer img {
+	display: none;
+}
+
+th {
+	background-image: url("./images/cellpic3.gif") !important;
+}
