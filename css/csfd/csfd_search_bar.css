@@ -1,0 +1,66 @@
+/** CSFD Seatch Input Tuning
+ * @author		Jan Pecha, 2012
+ * @license		New BSD License
+ * @version		2012-12-07-1
+ */
+
+#main-search {
+	background-image: none !important;
+	width: 460px !important;
+	left: 372px !important;
+	top: 50px !important;
+	text-align: right !important;
+}
+
+#user-menu.logged + #main-search, #user-menu.logged ~ #main-search {
+	width: 320px !important;
+}
+
+#main-search input {
+	position: static !important;
+}
+
+#main-search input#mainSearch {
+	background: #fff !important;
+	width: 414px !important;
+	padding: 4px 5px !important;
+	border-radius: 4px 0 0 4px !important;
+	display: block !important;
+	box-shadow: inset 0px 1px 4px 0px #ccc !important;
+/*	border: 1px solid #ddc !important;*/
+}
+
+#user-menu.logged + #main-search input#mainSearch, #user-menu.logged ~ #main-search input#mainSearch {
+	width: 274px !important;
+}
+
+
+#main-search input.submit { /*#AA0A09*/
+	background: /*#CA0B0E*/#E80C11 url("data:image/gif;base64,R0lGODlhDQANAKU1AJ4ADrwAF8AAF8sAGcwAGdIAF8AGGboJGsQJG8APJMYYLLoeK84eMcYhM9AnOtonOtowQ9Q/TtVIV9dRX71aY75aY9RdaOhaatBmb8lveNNvd9ZveNZ4gNF7gdZ+heCZn+acpeefp+ext+W3u+i9wOvAxfTAxvnS1vPb3fTe4PLh4vPh4/rh5Pjk5vXn6Pbn6fnt7vrt7vv29vz29/35+f///////////////////////////////////////////yH5BAEKAD8ALAAAAAANAA0AQAZiwJ9wIAgICMLkzzKrAH4AisyVdNQeyh+kxsh6fx2YUNE6XX6XU6uRjNAO2QMtkl1oPpgfp1ZTJRMhLDUsIAlKBSImWSYlSRNiXjMSQggxGVkZLwZKGzMpIyh8NStfSh58JEEAOw==") no-repeat 50% 50% !important;
+	position: absolute !important;
+	top: 0 !important;
+	right: 0 !important;
+	display: block !important;
+	width: 36px !important;
+	height: 26px !important;
+	border-radius: 0 4px 4px 0 !important;
+	box-shadow: inset 0px 1px 4px 0px #AA0A09 !important;
+	line-height: 26px !important;
+	color: #fff !important;
+/*	border: 1px solid #ddc !important;*/
+}
+
+/*#main-search input.submit:focus {*/
+/*	border-color: #ddc !important;*/
+/*	outline: #ddc !important;*/
+/*}*/
+
+#main-search a.advanced-search {
+	position: static !important;
+}
+
+#main-search form {
+	position: relative !important;
+	display: block !important;
+	margin-bottom: 3px !important;
+}
