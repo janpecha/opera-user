@@ -1,0 +1,72 @@
+/** Twitter
+ * @author		Jan Pecha, 2012
+ * @license		New BSD License
+ *
+ * TODO:
+ * - oznacovat favorite a retweeted, stare zaruzek bylo zruseno
+ */
+
+/* tmava horni lista */
+.global-nav-inner {
+	background: #151515 !important;
+}
+
+/* horni lista neni fixni, ale zustava na zacatku stranky (pri scrollovani) */
+.topbar {
+	position: static !important;
+}
+
+#page-container { /* visualni uprava k predchozimu */
+	padding-top: 8px !important;
+}
+
+/* posun casu doprava */
+.tweet .time {
+	float: right !important;
+}
+
+/* presun "Retweeted by ..." pod tweet */
+.tweet {
+	/*display: table !important; /*nektere tweetu jsou uzsi, jine sirsi*/
+}
+
+.tweet > .context {
+	display: table !important;
+	/*margin-left: 58px !important;*/
+	/*padding-left: 30px;*/
+}
+
+.tweet > .context .with-icn {
+	/*margin-left: 58px !important; /* posun "Retweeted by" zpatky do feedu */
+	opacity: 0.5;
+}
+
+.tweet > .content {
+	/*display: table-row !important;*/
+	/*margin-left: 58px !important;*/
+}
+
+/* favorited / retweeted ikonka */
+.tweet.favorited,
+.tweet.retweeted {
+	background-image: url("data:image/gif;base64,R0lGODlhFwAXAMZCAMmADeV6AMmCDeKEAOKHAOKJAP+JAP+LAP+MANaXFf+OAP+QAP+SAP2UBOCcEf+VAP+XAPuYCf+aAPucCfCfDf+cAPyeBv+fAP+hAP+kAP+nAPapEf+pAOawHP+sAPGvGf+uAOuzHO6zHP+xAP+zAPO0Gv+1AP+3AP+4AO67Iu++J/DAKvPDOPPLSfnSOPrTL/TRYf3VIf7WF//ZH//cNfnccP/gSv7iZ//jXP/kX/zjdv/ndP/rifvqsP3so//vn//ytP/2yf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAH8ALAAAAAAXABcAAAfOgAGCg4SFhoJ/BoqLjI2OBn9/B5OUlZaXkX8Im5ycEZ2gCJl/CqWmCg0pDaeso38LsLEfPR+xtrCufwy7DBMwQTATvMMMuX8PyCI+QD4iyM/Pxn8sLTU/1zUtLCUbFhDf0n884+TjOikUEurhfzvu7zcqAAMV9ex/Ofk5OCsCBBcAL9z7Y6OgiwQFMChUOPAPDRovHGSYSLHhnxkxQmjYyNHiHxkdOIgc6fFPCg8oU5b8A6Kly5V/RsiUCfMPiZskav4xwVPnnxMnfP5BEQgAOw==") !important;
+	background-position: 100% 0% !important;
+	background-repeat: no-repeat !important;
+}
+
+.tweet.retweeted {
+	background-image: url("data:image/gif;base64,R0lGODlhFwAXAMZ4ADZWHzdWHzlZIUdrLkZtKkdvLElzL0d2Jkp1Lkh3J0t2L0l4KEp4KEt3L0p5KU14MEt6Kkx6KU15MU16K0t7KE56MU57LEx8KU58LE19Kk99LU5+KVB+Lk9/K1B/L0+CKlKBMVGDK1OCMlGELlSDM1OELlSEMVWENlaENFSFMlaFNVKHLVOILVOILliGOVeHM1SJLliHN1SJL1iHOViINFWKL1WKMFmIOVuJOlaMMFeMMVyKO1qMNFiNMlqNNV6MPVyON1qPNF6NP1uQNWCPQVySOF2SOGGQQWKQQWGRPWKSP16UOGGTO1+UOmGUOmOTQGOUPWCWOWWVQ2SWPmWWP2aWRWeZQWmaQ2icQWqcRGWeP2ieQmyeRmqgRGygRW2hRm6iR4HaUI7tWI/tWJDtWpDtW5PsX5TtXqXscqbsc5r0ZZv0Za3yeJr9YJz9ZJ/9ZqL9a6j9b6z9c6/9d7L9ebX9fbf9gLn9gv///////////////////////////////yH5BAEKAH8ALAAAAAAXABcAAAfwgAcUHysshoeIiYh/CRchLTCRkpOUkn9/CxkjMjWdnp+gnZd/DBslNjmpqqusOaN/Dh1ObHe1tre1OrqvfxARBGl2wsPEdj3HvH8YEwVodc/Q0UHTyX8aFgIAAdvcdN5D4NV/HCY8RUbo6HPr6eJ/Hik+Rkv0S3L39e5/IC9ATVEA4wgEGEXfHxE0tKiBw7AhnDUG/6AgYcDMm4sXzzSI+EfFCQRk3Igs84AJxz8xXCgQ02aMBChYTv65MaNBmApTtmyR+WcHjgFUugjl2TOJlS5evBD980PJlS9glv4R8iRLVKlEpHCReulIFa6XkAQCADs=") !important;
+}
+
+
+.tweet.retweeted.favorited {
+	background-image: url("data:image/gif;base64,R0lGODlhFwAXAMZmADdWH0drLklzL0p1Lkt2L0t3L014ME15MU56MVSDM1WENlaENFaFNViGOVSJLliHN1iHOViINFWKL1mIOVuJOlaMMFeMMVyKO1iNMl6MPVqPNF6NP1uQNWCPQV2SOGGQQWKQQWGRPWKSP16UOGGTO1+UOmOTQGOUPWCWOWWVQ2SWPmWWP2aWReV6AGeZQWmaQ2icQWqcRGWeP2ieQmyeRmqgRGygRW2hRm6iR/+JAP+LAP+MAP+OAP+QAP+SAP2UBP+VAPuYCfucCfGvGe6zHO67IoHaUPPDOPPLSY7tWI/tWJDtWpDtW5PsX5TtXvTRYZr0ZZv0ZfnccJr9YJz9ZJ/9ZqL9a//kX6j9b6z9c6/9d7L9ef/ndLX9fbf9gLn9gv/rifvqsP3so//vn//ytP/2yf///////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEKAH8ALAAAAAAXABcAAAfugC2Cg4SFhoJ/OYqLjI2ODn9/OpOUlZaVEhKRfzudnp5Bn54VpJt/PKipPD9FP6o8Xxaypn89trdDYUO3PV5eGMC0fz7EPkJPZU9CxF3NGs/Cf0DTRGJkYkRAAFvcHN7Rf0dIUmPlUh4eWuroHuB/YPDwI/NZ9fMj7n9c+yUo/lgA/aHI9+dKBBlQrChcaCUKwT8LEghoUqViRScFHv5hoGDAEiogmRggofHPgwYEkkxRcuAEjJJ/JkAoYASBihkzYP65QCHAihpAde4M4aKGDRtC/2QQ8eIGjqR/NpiI8RRqhxQ0oEb6wEJrJBCBAAA7") !important;
+}
+
+/* detail tweetu - text tweetu */
+.permalink-tweet p {
+	font-size: 24px !important;
+	font-family: "Georgia" !important;
+	line-height: 32px !important;
+}
+
