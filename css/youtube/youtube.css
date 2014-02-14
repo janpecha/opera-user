@@ -1,0 +1,52 @@
+/** Youtube Tuning CSS
+ * @author		Jan Pecha, 2012-2013
+ * @license		New BSD License
+ * @version		2013-08-16-1
+ */
+/*player-width player-height*/
+/* Zarovnani na stred */
+#yt-masthead, #page-container, #alerts, #footer-hh, #masthead-subnav, #content-container {
+	width: 1124px !important;
+	margin: 0 auto !important;
+}
+
+#page {
+	margin: 0 !important;
+}
+
+#guide-container {
+	left: 0 !important;
+}
+
+#watch7-video-container, #watch7-main-container {
+	padding-left: 180px !important; /* lepsi mi prijde 181px, ale v zajmu zachovani
+		stejneho vzhledu i s ostatnimi castmi YT, necham 180px */
+}
+
+/*.site-left-aligned.guide-enabled .watch7-playlist,*/
+.site-left-aligned.guide-enabled #watch7-video-container,
+.site-left-aligned.guide-enabled #watch7-main-container,
+#watch7-container #player { 
+	padding-left: 180px !important;
+}
+
+.site-left-aligned.guide-enabled #player,
+.site-left-aligned.guide-enabled #player-legacy,
+.site-left-aligned.guide-enabled #watch7-main-container {
+	padding-left: 180px !important;
+}
+
+
+/* Zvyrazneni videi na boku po najeti mysi */
+.video-list-item {
+	margin-bottom: 9px !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
+	border: 1px solid transparent !important;
+}
+
+.video-list-item:hover {
+	background-color: #eee !important;
+	border-color: #e2e2e2 !important;
+}
+
