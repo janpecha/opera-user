@@ -1,0 +1,9 @@
+/**
+ * Fix for kzv.kkvysociny.cz
+ */
+
+#menu {
+	float: left !important;
+	margin-left: 3px !important;
+}
+
