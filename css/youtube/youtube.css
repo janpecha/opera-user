@@ -19,3 +19,12 @@
 	border-color: #e2e2e2 !important;
 }
 
+/* horni panel - zruseni fixed */
+#masthead-positioner {
+	position: relative !important;
+}
+
+#masthead-positioner-height-offset {
+	height: 0 !important;
+}
+
