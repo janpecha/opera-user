@@ -70,3 +70,16 @@
 	line-height: 32px !important;
 }
 
+/* text tweetu - @username */
+.pretty-link s, /* @ prefix*/
+.pretty-link b /* user name */ {
+	color: inherit !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	text-decoration: none !important;
+}
+
+.pretty-link:hover {
+	text-decoration: underline !important;
+}
+
