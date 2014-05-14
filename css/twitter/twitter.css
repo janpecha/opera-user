@@ -83,3 +83,12 @@
 	text-decoration: underline !important;
 }
 
+/* skryti prekladu */
+.tweet-translation {
+	display: none !important;
+}
+
+/**************** New Profile Fix **********************/
+/*.ProfileCanopy-navBar */.Grid-cell.u-size1of4 {
+	width: 24% !important;
+}
